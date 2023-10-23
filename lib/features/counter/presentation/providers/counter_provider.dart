@@ -10,15 +10,15 @@ class CounterProvider extends ChangeNotifier {
   // Constructor for CounterProvider, injecting GetCounterUseCase
   CounterProvider(this.getCounterUseCase);
 
-  // Internal state: CounterModel
+  /// Internal state: [CounterModel]
   CounterModel _counterModel = CounterModel(count: 0);
 
-  // Getter for accessing the current CounterModel
+  /// Getter for accessing the current [CounterModel]
   CounterModel get counterModel => _counterModel;
 
   // Asynchronous method to fetch the counter value
   Future<void> fetchCounter() async {
-    // Execute the GetCounterUseCase to get the counter entity
+    /// Execute the [GetCounterUseCase] to get the counter entity
     final count = getCounterUseCase.execute();
     // Update the internal state with the new counter value
     _counterModel = CounterModel(count: count.count);

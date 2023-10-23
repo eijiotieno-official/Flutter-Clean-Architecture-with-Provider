@@ -20,7 +20,7 @@ class _CounterPageState extends State<CounterPage> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      // Create a CounterProvider and inject dependencies
+      /// Create a [CounterProvider] and inject dependencies
       create: (context) => CounterProvider(
         GetCounterUseCase(CounterRepositoryImpl(CounterDataSource())),
       ),
@@ -32,9 +32,9 @@ class _CounterPageState extends State<CounterPage> {
         body: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Display the CounterWidget
+            /// Display the [CounterWidget]
             CounterWidget(),
-            // Display the ActionsWidget
+            /// Display the [ActionsWidget]
             ActionsWidget(),
           ],
         ),

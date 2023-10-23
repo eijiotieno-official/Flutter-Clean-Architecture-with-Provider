@@ -9,13 +9,13 @@ class CounterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Access the CounterProvider using Provider.of
+    /// Access the [CounterProvider] using Provider.of
     final counterProvider = Provider.of<CounterProvider>(context);
 
     return Padding(
       padding: const EdgeInsets.all(25),
       child: Text(
-        // Display the counter value from the CounterProvider
+        /// Display the counter value from the [CounterProvider]
         counterProvider.counterModel.count.toString(),
         style: const TextStyle(
           fontSize: 25,

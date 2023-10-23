@@ -9,7 +9,7 @@ class ActionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Access the CounterProvider using Provider.of
+    /// Access the [CounterProvider] using Provider.of
     final counterProvider = Provider.of<CounterProvider>(context);
 
     return Row(

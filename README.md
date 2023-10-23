@@ -8,7 +8,7 @@ This repository serves as a demonstration of implementing Clean Architecture pri
 
 ### `lib` Folder
 
-#### `core` Folder
+#### `config` Folder
 
 - **`themes` Folder:** Contains theme configurations for the application.
   - `dark_theme.dart`: Dark theme configuration.
