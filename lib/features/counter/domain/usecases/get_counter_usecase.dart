@@ -12,7 +12,7 @@ class GetCounterUseCase {
 
   /// Execute method to get the counter entity using the injected [CounterRepository]
   CounterEntity execute() {
-    /// Delegate the responsibility of getting the counter entity to the injected [CounterRepository]
+    /// Delegate the reposibility of getting the counter entity to the injected [CounterRepository]
     return counterRepository.getCounter();
   }
 }

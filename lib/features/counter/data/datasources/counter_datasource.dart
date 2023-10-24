@@ -1,5 +1,6 @@
 /// Import the [CounterModel] class for use in this file
-import 'package:clean_architecture/features/counter/data/models/counter_model.dart';
+
+import "package:clean_architecture/features/counter/data/models/counter_model.dart";
 
 // Define a class representing the data source for the counter feature
 class CounterDataSource {

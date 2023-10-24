@@ -22,7 +22,11 @@ class _CounterPageState extends State<CounterPage> {
     return ChangeNotifierProvider(
       /// Create a [CounterProvider] and inject dependencies
       create: (context) => CounterProvider(
-        GetCounterUseCase(CounterRepositoryImpl(CounterDataSource())),
+        GetCounterUseCase(
+          CounterRepositoryImpl(
+            CounterDataSource(),
+          ),
+        ),
       ),
       child: Scaffold(
         appBar: AppBar(
@@ -34,6 +38,7 @@ class _CounterPageState extends State<CounterPage> {
           children: [
             /// Display the [CounterWidget]
             CounterWidget(),
+
             /// Display the [ActionsWidget]
             ActionsWidget(),
           ],

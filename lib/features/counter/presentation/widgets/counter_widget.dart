@@ -16,7 +16,7 @@ class CounterWidget extends StatelessWidget {
       padding: const EdgeInsets.all(25),
       child: Text(
         /// Display the counter value from the [CounterProvider]
-        counterProvider.counterModel.count.toString(),
+        counterProvider.counterEntity.count.toString(),
         style: const TextStyle(
           fontSize: 25,
         ),
