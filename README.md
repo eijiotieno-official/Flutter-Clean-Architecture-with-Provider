@@ -2,7 +2,7 @@
 
 This repository serves as a demonstration of implementing Clean Architecture principles in a Flutter application, focusing on a simple counter feature. The architecture is designed for maintainability, testability, and scalability, with state management handled using the `Provider` package.
 
-[Video](https://www.example.com](https://www.youtube.com/watch?v=9Yyb4fDNJxc)
+[Video](https://www.youtube.com/watch?v=9Yyb4fDNJxc)
 
 ## Project Structure
 
